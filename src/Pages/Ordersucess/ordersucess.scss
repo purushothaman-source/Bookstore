@@ -1,0 +1,28 @@
+@import "../Styles/mixins.scss";
+.orderbody {
+    @include box(max-width, 70.2vh, border-box);
+    @include flex(column, space-evenly, center);
+    margin: 0 15.5%;
+    margin-bottom: 13vh;
+    font:Roboto;
+    // background-color: yellow;
+    .image{
+        padding: 10px;
+    }
+    .texts{
+        text-align: center;
+        padding: 10px;
+        width: 350px;
+        font-size: 16px;
+    }
+    .table{
+        // padding: 15px;
+        border: 1px solid grey;
+        th{
+            background-color: #DCDCDC;
+        }
+         td{
+             padding: 15px;
+         }
+    }
+}

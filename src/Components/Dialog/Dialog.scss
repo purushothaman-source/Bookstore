@@ -1,0 +1,22 @@
+.dialog{
+    width: 350px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding :15px;
+    border-radius: 8px;
+    .heading{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Roboto;
+    }
+    Button{
+        margin: 5px 0;
+        background-color: #a03037;
+        color: white;
+    }
+   
+}

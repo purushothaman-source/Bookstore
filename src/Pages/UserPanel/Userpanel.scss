@@ -1,0 +1,77 @@
+@import "../Styles/mixins.scss";
+
+.usercontent {
+    // background-color: lightpink;
+    @include box(max-width, 89.4vh, border-box);
+    @include flex(column, flex-start, flex-start);
+    font-family: Roboto;
+    margin: 0 15.5%;
+    .inlineheader {
+        padding-top: 10px;
+        width: 100%;
+        @include flex(row, space-between, center);
+        .headers {
+            font-size: 25px;
+        }
+        #demo-simple-select-outlined {
+            width: 113px;
+            height: 5px;
+        }
+    }.books{
+        @include flex(row,space-between,center);
+        flex-wrap: wrap;
+    .showbooks {
+        @include box(170px,220px,border-box);
+        border: 1px solid #E2E2E2;
+        background: white;
+        margin: 10px;
+        // margin-left: 0;
+        .bookimage {
+            @include flex(row,center,center);
+            @include box(100%,50%,border-box);
+            background-color:#E2E2E2;
+            img{
+                width: 70px;
+            }
+        }
+     .content{
+         padding: 10px;
+         .author{
+             font-size: 15px;
+             color: #878787;
+             padding-bottom: 5px;
+         }
+         .price{
+             padding-bottom: 5px;
+         }
+         .inlinebuttons{
+             @include flex(row,space-between,center);
+
+           
+             .addtobag{
+                 width: 50px;
+                 height: 25px;
+                 padding: 8px;
+                 background-color: #a03037;
+                 font-size: 10px;
+             }
+             .wishlist{
+                width: 50px;
+                height: 25px;
+                padding: 8px;
+                color:black;
+                background: white;
+                font-size: 10px;
+
+             }
+             .addedtobag{
+                 background-color: #3371B5;
+                 height: 25px;
+                 color: white;
+
+             }
+         }
+     }
+    }
+    }
+}

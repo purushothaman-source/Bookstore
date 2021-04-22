@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.appbar {
+    width: 100%;
+    height: 70px;
+    background-color: #a03037;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+        display: flex;
+        img {
+        // padding-left: 130px;
+        width: 30px;
+        height: 30px;
+    }
+    p {
+        color: white;
+        padding-left: 5px;
+        font-size: 20px;
+        width: auto;
+       
+    }}
+    .input{
+        // height: 40px;
+        width: 400px;
+        height: 29px;
+        border-radius: 3px;
+        align-content: center;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 3px;
+        flex-grow: 0;
+        margin-left: 20px;
+        // margin-left: -140px;
+        .searchicon{
+            color: grey;
+        }
+        input{
+            // margin-left: 5px;
+           height: 29px;
+           outline: none;
+           border-radius: 3px;
+           border: none;
+           
+        }
+    }
+    div{
+        padding: 0 25px;
+    .pro{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        // margin-left: 200px;
+        width: auto;
+        .proicon{
+            color: white;
+        }
+    }
+    .cart{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        // padding: 25px;
+        // margin-right: -200px;
+        .carticon{
+            color: white;
+        }
+    }}
+}
+@media only screen and (max-width: 360px) {
+    .appbar {  
+        width: 225%;   
+        div {
+            display: flex;
+            img {
+            // padding-left: 130px;
+            width: 30px;
+            height: 30px;
+        }
+        p {
+            color: white;
+            padding-left: 5px;
+            font-size: 20px;
+            width: auto;
+           
+        }}
+        .input{
+            // height: 40px;
+            width: 400px;
+            height: 29px;
+            border-radius: 8px;
+            align-content: center;
+            background: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 3px;
+            flex-grow: 0;
+            input{
+                // margin-left: 5px;
+               height: 29px;
+               outline: none;
+               border-radius: 8px;
+               border: none;
+    
+               
+            }
+        }
+        div{
+            padding: 0 25px;
+        .pro{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            // margin-left: 200px;
+            width: auto;
+            .proicon{
+                color: white;
+            }
+        }
+        .cart{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            // padding: 25px;
+            // margin-right: -200px;
+            .carticon{
+                color: white;
+            }
+        }}
+    }
+}
