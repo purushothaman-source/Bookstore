@@ -52,6 +52,7 @@ class CartItems extends React.Component {
         };
         service.order(data).then((res) => {
             console.log(res);
+            this.props.history.push('/ordersucess')
         }).catch((err) => {
             console.log(err);
         })
@@ -113,7 +114,7 @@ class CartItems extends React.Component {
     }
     render() {
         return (<>
-            <Appbar />
+            <Appbar show={false} />
             <div className="cartcontent">
                 <div className="cartitems box">
                     <div className="mycart"> My Cart({this.state._cartbooks.length})</div>
@@ -144,7 +145,7 @@ class CartItems extends React.Component {
                     }
                 </div>
                 <div className="customerdetails box">
-                    <div>Customer Details</div>
+                    <div>Customer Details </div>
                     {this.state.show ? <>     <div className="addressfield">
                         <TextField id="outlined-basic" label="Name" variant="outlined"
                             name="name"
